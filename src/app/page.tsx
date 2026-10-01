@@ -7,6 +7,7 @@ import {
   CATEGORY_COLOR,
   type Biscuit,
 } from "@/lib/biscuits";
+import { posts, type Post } from "@/lib/posts";
 
 const MONTHS = [
   "JAN",
@@ -71,9 +72,51 @@ function BiscuitCard({ biscuit, index }: { biscuit: Biscuit; index: number }) {
   );
 }
 
+function PostArticle({ post }: { post: Post }) {
+  return (
+    <motion.article
+      initial={{ opacity: 0, y: 28 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+      className="mb-14 rounded-xl border border-line bg-panel/40 p-7 backdrop-blur-sm sm:p-10"
+    >
+      <div className="mb-5 flex flex-wrap items-baseline gap-x-4 gap-y-1 border-b border-line pb-4">
+        <span className="font-mono text-[11px] tracking-[0.3em] text-cyan">
+          {formatDate(post.date)}
+        </span>
+        <span className="font-mono text-[11px] tracking-[0.2em] text-mute">
+          {post.tagline}
+        </span>
+      </div>
+
+      <h3 className="neon-amber text-3xl font-bold leading-tight tracking-tight text-cream sm:text-4xl">
+        {post.title}
+      </h3>
+
+      <div className="mt-8 space-y-5">
+        {post.sections.map((s, i) => (
+          <div key={i}>
+            {s.heading && (
+              <h4 className="mb-2 font-mono text-sm tracking-[0.15em] text-amber">
+                {`// ${s.heading.toUpperCase()}`}
+              </h4>
+            )}
+            <p className="text-[15px] leading-relaxed text-mute">{s.body}</p>
+          </div>
+        ))}
+      </div>
+
+      {post.signoff && (
+        <p className="mt-8 font-mono text-sm text-amber/90">{post.signoff}</p>
+      )}
+    </motion.article>
+  );
+}
+
 export default function Home() {
   const total = biscuits.length;
-  const lastDrop = formatDate(biscuits[0].date);
+  const transmissions = posts.length;
 
   return (
     <div className="relative">
@@ -126,15 +169,32 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6">
         <div className="flex flex-wrap items-center gap-x-8 gap-y-2 rounded-lg border border-line bg-panel/40 px-6 py-4 font-mono text-xs text-mute backdrop-blur-sm">
           <span>
-            <span className="text-amber">▮</span> {total} BISCUITS ARCHIVED
+            <span className="text-amber">▮</span> {transmissions} TRANSMISSION
+            {transmissions === 1 ? "" : "S"}
           </span>
           <span>
-            <span className="text-cyan">▮</span> LAST DROP: {lastDrop}
+            <span className="text-cyan">▮</span> {total} BISCUITS ARCHIVED
           </span>
           <span className="ml-auto hidden md:block tracking-[0.15em]">
             A LIVE ARCHIVE OF COOL INTERNET FINDS
           </span>
         </div>
+      </section>
+
+      {/* ---------- TRANSMISSIONS ---------- */}
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <motion.h2
+          initial={{ opacity: 0, x: -16 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-8 font-mono text-xs tracking-[0.3em] text-mute"
+        >
+          {"// TRANSMISSIONS"}
+        </motion.h2>
+        {posts.map((p) => (
+          <PostArticle key={p.slug} post={p} />
+        ))}
       </section>
 
       {/* ---------- FEED ---------- */}
