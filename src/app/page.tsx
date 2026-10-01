@@ -8,6 +8,7 @@ import {
   type Biscuit,
 } from "@/lib/biscuits";
 import { posts, type Post } from "@/lib/posts";
+import { MagikDownload } from "@/components/magik-download";
 
 const MONTHS = [
   "JAN",
@@ -196,6 +197,8 @@ export default function Home() {
           </span>
         </div>
       </section>
+
+      <MagikDownload />
 
       {/* ---------- FEATURE IMAGE ---------- */}
       <section className="mx-auto max-w-2xl px-6 pt-12">
