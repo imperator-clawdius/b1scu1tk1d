@@ -197,6 +197,20 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ---------- FEATURE BANNER ---------- */}
+      <section className="mx-auto max-w-6xl px-6 pt-12">
+        <div className="group overflow-hidden rounded-xl border border-line">
+          <img
+            src="/widowmaker-wide.jpg"
+            alt="Widowmaker — full artwork"
+            className="w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+          />
+        </div>
+        <p className="mt-3 font-mono text-[10px] tracking-[0.3em] text-mute">
+          {"// W1D0WM4K3R — GHOST IN THE MACHINE"}
+        </p>
+      </section>
+
       {/* ---------- TRANSMISSIONS ---------- */}
       <section className="mx-auto max-w-4xl px-6 py-16">
         <motion.h2
