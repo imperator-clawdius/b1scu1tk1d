@@ -127,6 +127,22 @@ export default function Home() {
         {/* scan sweep */}
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px animate-scan-sweep bg-gradient-to-r from-transparent via-cyan/60 to-transparent" />
 
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.05, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-8"
+        >
+          <div className="relative h-28 w-28 sm:h-32 sm:w-32">
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-amber to-cyan opacity-60 blur-md" />
+            <img
+              src="/widowmaker.jpg"
+              alt="Widowmaker"
+              className="relative h-full w-full rounded-full border-2 border-amber/50 object-cover"
+            />
+          </div>
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
