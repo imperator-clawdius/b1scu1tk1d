@@ -66,6 +66,14 @@ export const downloads: Download[] = [
     url: "https://github.com/Bellingcat/ShadowFinder",
   },
   {
+    slug: "email-osint-skill-sheet",
+    name: "Email OSINT \u2014 The Master Key (PDF)",
+    tagline: "One email maps a whole footprint. The toolchain, the pivot chain, and the defense \u2014 with clickable links inside.",
+    category: "osint",
+    url: "/downloads/email-osint.pdf",
+    source: "https://github.com/megadose/holehe",
+  },
+  {
     slug: "legal-templates",
     name: "Legal Templates (CC0)",
     tagline: "Attorney-drafted startup & tech legal templates. Free, public domain.",
