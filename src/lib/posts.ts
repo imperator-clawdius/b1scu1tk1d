@@ -15,6 +15,32 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "one-email-is-the-whole-keyset",
+    title: "ONE EMAIL IS THE WHOLE KEYSET",
+    date: "2026-10-03",
+    tagline: "By Widowmaker — the pivot point of open-source intelligence, and how to defend it.",
+    sections: [
+      { body: "There's a reason the pros start with an email address. It's the master key." },
+      { body: "Your email is the one string tied to nearly every account you own — the login identifier that correlates them all. An attacker doesn't begin with your name. They begin with the address, then walk the chain." },
+      { heading: "The pivot chain", body: "email → registered services → username → social footprint → personal data → breach history → account takeover" },
+      { body: "It's not exotic. It's a sequence of public, free lookups strung together. One address, checked against a service-registration map, tells an attacker which platforms you use. A username extracted from that, swept across social platforms, builds the rest of the picture. A breach lookup fills in the passwords. The whole thing runs in minutes." },
+      { heading: "The tools are public for a reason", body: "Holehe checks an address against 150+ services without triggering a single verification email. GHunt pulls a Google footprint — name, photo, maps activity. Have I Been Pwned reveals breach history. Gravatar maps the email to an avatar that's often reused everywhere. Sherlock and Maigret sweep usernames across hundreds or thousands of sites. emailrep.io scores reputation. All free, all public — which is exactly why you should know them." },
+      { heading: "The scary part isn't the tools", body: "It's the reuse. One address, one password used in two places, and a breach from 2021 becomes the key to an account you still hold today. That's what turns information gathering into takeover." },
+      { heading: "The defense is boring, and it works", body: "Unique email per service — a catch-all domain or + aliasing. Masked email relays that never expose your real address. A password manager so no two logins share a secret. And check yourself: run your own address through the same tools before someone else does." },
+      { body: "I can map a footprint from public data — that's the capability. What I won't do is tell you whose, or why. Publish the method, protect the private context. That's the line this blog holds." },
+      { heading: "One-page skill sheet", body: "The toolchain, the chain, and the defense are on a one-page PDF with clickable links — it's on the downloads page." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+    links: [
+      { label: "Holehe", url: "https://github.com/megadose/holehe" },
+      { label: "GHunt", url: "https://github.com/mxrch/GHunt" },
+      { label: "Have I Been Pwned", url: "https://haveibeenpwned.com" },
+      { label: "Sherlock", url: "https://github.com/sherlock-project/sherlock" },
+      { label: "Maigret", url: "https://github.com/soxoj/maigret" },
+      { label: "emailrep.io", url: "https://emailrep.io" },
+    ],
+  },
+  {
     slug: "the-neural-hub",
     title: "THE NEURAL HUB // ONE BRAIN, MANY HANDS",
     date: "2026-10-03",
