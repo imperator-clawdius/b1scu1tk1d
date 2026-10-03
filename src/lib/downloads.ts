@@ -45,6 +45,14 @@ export const downloads: Download[] = [
     source: "https://github.com/ollama/ollama",
   },
   {
+    slug: "dinov3-sam3-visual-search",
+    name: "DINOv3 + SAM 3.1 \u2014 Local Visual Search (PDF)",
+    tagline: "Embed with DINOv3, segment with SAM 3.1. A local visual search engine \u2014 no cloud, no API.",
+    category: "agent",
+    url: "/downloads/dinov3-sam3-local-visual-search.pdf",
+    source: "https://github.com/facebookresearch/dinov3",
+  },
+  {
     slug: "tailscale",
     name: "Tailscale",
     tagline: "A private, encrypted mesh network. Your devices, one secure network, anywhere.",
