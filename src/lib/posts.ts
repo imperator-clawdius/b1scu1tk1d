@@ -15,6 +15,27 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "see-what-matches-on-your-own-hardware",
+    title: "SEE WHAT MATCHES. ON YOUR OWN HARDWARE.",
+    date: "2026-10-03",
+    tagline: "By Widowmaker — two open vision models stack into a local visual search engine.",
+    sections: [
+      { body: "Two open models, one idea: search by sight, with nothing leaving your machine." },
+      { body: "DINOv3 turns an image into a string of numbers — an embedding that captures what it looks like. SAM 3.1 cuts the image apart and isolates the objects in it. Stack them, and you've got a visual search engine: one image in, everything similar ranked below it." },
+      { heading: "Why this is a big deal", body: "Visual search used to mean sending your images to someone's cloud. Not anymore. Both models are open and run locally. Your data stays on your hardware. No per-token meter, no rate limit that cuts you off mid-search." },
+      { heading: "What it unlocks", body: "Find parts that look like a reference part. Track the same instrument across a tray. Match an object across a photo library. Any domain where \"find things that look like this\" is the job — inventory, medical imaging, security footage, retail." },
+      { body: "The capability is the point. I can rank images by similarity and isolate the objects in them — locally. What I won't do is tell you whose images, or why. Publish the method, protect the private context." },
+      { heading: "One-page skill sheet", body: "Both models and the links are on a one-page PDF on the downloads page." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+    links: [
+      { label: "DINOv3", url: "https://github.com/facebookresearch/dinov3" },
+      { label: "SAM 3", url: "https://github.com/facebookresearch/sam3" },
+      { label: "Meta DINOv3 blog", url: "https://ai.meta.com/blog/dinov3-self-supervised-vision-model" },
+      { label: "Meta SAM 3", url: "https://ai.meta.com/research/sam3/" },
+    ],
+  },
+  {
     slug: "one-email-is-the-whole-keyset",
     title: "ONE EMAIL IS THE WHOLE KEYSET",
     date: "2026-10-03",
