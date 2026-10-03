@@ -99,7 +99,7 @@ function PostArticle({ post }: { post: Post }) {
         {post.sections.map((s, i) => (
           <div key={i}>
             {s.heading && (
-              <h4 className="mb-2 font-mono text-sm tracking-[0.15em] text-amber">
+              <h4 className="mb-2 font-mono text-sm tracking-[0.15em] text-cyan">
                 {`// ${s.heading.toUpperCase()}`}
               </h4>
             )}
