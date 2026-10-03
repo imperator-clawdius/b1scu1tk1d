@@ -9,6 +9,7 @@
   --color-amber: #f0b34a;
   --color-amber-dim: #b8863a;
   --color-cyan: #3be0c8;
+  --color-prose: #b5e8e2;
   --color-line: rgba(255, 255, 255, 0.08);
 
   --font-display: var(--font-space-grotesk);

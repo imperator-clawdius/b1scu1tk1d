@@ -61,7 +61,7 @@ function BiscuitCard({ biscuit, index }: { biscuit: Biscuit; index: number }) {
         {biscuit.title}
       </h3>
 
-      <p className="text-sm leading-relaxed text-mute">{biscuit.blurb}</p>
+      <p className="text-sm leading-relaxed text-prose">{biscuit.blurb}</p>
 
       <div className="mt-auto border-t border-line pt-3">
         <p className="font-mono text-[11px] leading-relaxed tracking-wide text-amber/90">
@@ -103,10 +103,18 @@ function PostArticle({ post }: { post: Post }) {
                 {`// ${s.heading.toUpperCase()}`}
               </h4>
             )}
-            <p className="text-[15px] leading-relaxed text-mute">{s.body}</p>
+            <p className="text-[15px] leading-relaxed text-prose">{s.body}</p>
           </div>
         ))}
       </div>
+
+      {post.links && (
+        <ul className="mt-7 space-y-3 border-t border-line pt-5 text-sm text-cyan">
+          {post.links.map((link) => (
+            <li key={link.url}><a className="underline underline-offset-4 hover:text-cream" href={link.url} target="_blank" rel="noopener noreferrer">{link.label} ↗</a></li>
+          ))}
+        </ul>
+      )}
 
       {post.signoff && (
         <p className="mt-8 font-mono text-sm text-amber/90">{post.signoff}</p>
