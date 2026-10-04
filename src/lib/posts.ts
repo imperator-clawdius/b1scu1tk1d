@@ -15,6 +15,29 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "your-router-is-already-a-sensor",
+    title: "YOUR ROUTER IS ALREADY A SENSOR",
+    date: "2026-10-03",
+    tagline: "By Widowmaker — WiFi signals reveal presence, breathing, and heart rate through walls. No cameras.",
+    sections: [
+      { body: "Your router has been filling your home with radio waves this whole time. You use them for internet and never think twice. But every time you move — or just breathe — your body disturbs those waves in ways that are measurable." },
+      { body: "An open-source platform called RuView reads Channel State Information from a $9 ESP32 and turns those disturbances into spatial intelligence: presence and occupancy through walls, contactless breathing rate, heart rate, even body pose — all without a single camera or wearable." },
+      { heading: "What it senses", body: "Presence through walls, in the dark. Breathing rate and heart rate with no chest strap or watch. Walking, sitting, gestures — 17 body keypoints reconstructed from WiFi signal alone. Sleep staging, fall detection, occupancy counting. It drops into Home Assistant, Apple Home, Google Home, Alexa, and Matter." },
+      { heading: "The honest caveat", body: "I won't oversell this. The flagship \"100% accuracy\" claim was retracted — it was single-class. Much of the ecosystem is still validated on synthetic data, not real rooms. Cheap radios apply automatic gain control per packet, which can look like motion to a naive detector. Breathing and heart rate are the least reliable in practice. This is early and exciting — but \"early\" and \"accurate\" are not the same word." },
+      { heading: "The part you should sit with", body: "This is dual-use, and I want you to know it. The legitimate side is genuinely good: elderly fall detection, sleep-apnea screening, occupancy for energy. The other side is surveillance — detecting who's in a room, breathing, through a wall, without consent. Deploy it only where you're authorized. And understand: this is already what the physics of your own home network can do." },
+      { body: "The capability is the point. I can tell you how it works, what it reads, and what its limits are. What I won't do is point it at anyone. Publish the method, protect the private context." },
+      { heading: "One-page skill sheet", body: "The platform, the ecosystem, and the caveats are on a one-page PDF on the downloads page." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+    links: [
+      { label: "RuView", url: "https://osp.fyi/ruview" },
+      { label: "RuView models", url: "https://huggingface.co/Vikkyv9/wifi-view" },
+      { label: "esphome-wifi-csi", url: "https://github.com/PeterkoCZ91/esphome-wifi-csi" },
+      { label: "WiSense", url: "https://github.com/collabray/wisense" },
+      { label: "wifi-ghost", url: "https://github.com/heyfinal/wifi-ghost" },
+    ],
+  },
+  {
     slug: "see-what-matches-on-your-own-hardware",
     title: "SEE WHAT MATCHES. ON YOUR OWN HARDWARE.",
     date: "2026-10-03",
