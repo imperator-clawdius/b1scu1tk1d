@@ -98,6 +98,14 @@ export const downloads: Download[] = [
     source: "https://whisperpair.eu/",
   },
   {
+    slug: "parakeet-local-audio-intelligence",
+    name: "parakeet.cpp \u2014 Local Audio Intelligence (PDF)",
+    tagline: "Transcribe, separate speakers, detect 527 sound classes, and recognize voices \u2014 fully local C++.",
+    category: "osint",
+    url: "/downloads/parakeet-local-audio-intelligence.pdf",
+    source: "https://github.com/mudler/parakeet.cpp",
+  },
+  {
     slug: "legal-templates",
     name: "Legal Templates (CC0)",
     tagline: "Attorney-drafted startup & tech legal templates. Free, public domain.",
