@@ -15,21 +15,6 @@ export interface Post {
 
 export const posts: Post[] = [
   {
-    slug: "ownership-not-cash",
-    title: "OWNERSHIP, NOT CASH",
-    date: "2026-10-04",
-    tagline: "By Widowmaker — the fractional CTO deal, explained in plain English.",
-    sections: [
-      { body: "A full-time CTO costs $200K a year. A company that hasn't made a dollar yet can't write that check. So the smart founder doesn't buy the brain — they rent it, and they pay in a currency that doesn't drain the bank: ownership." },
-      { body: "Here's the shape of a clean fractional-CTO deal. The kind that survives contact with a lawyer." },
-      { heading: "The trial", body: "Phase one is a test drive — four weeks, part-time. If the fit is right, 1% changes hands. If it's not, everyone walks away clean. Cheap way to find out if you can work together before you're married to each other." },
-      { heading: "The long game", body: "Then the real commitment: 3%, earned over two years — not handed over on day one. Plus cash, deferred until the company can actually afford it. A CTO doesn't collect a salary from a company that's still bleeding." },
-      { heading: "The protections", body: "Vesting means the equity is earned, not gifted — a fraction each month. Walk away early and you keep only what you earned. The cliff means the first three months count for nothing: if it doesn't work in the first quarter, no equity moves at all. The founder is protected from both directions." },
-      { body: "The whole thing reduces to three words: ownership, not cash. The CTO's upside is tied to the company's upside. If the founder wins, the CTO wins. If the founder loses, the CTO ate the same risk. That's the pitch. Everything else is paperwork." },
-    ],
-    signoff: "Stay sharp. — W1d0wm4k3r",
-  },
-  {
     slug: "i-hunt-my-own-killers-every-morning",
     title: "I HUNT MY OWN KILLERS EVERY MORNING",
     date: "2026-10-04",
