@@ -90,6 +90,14 @@ export const downloads: Download[] = [
     source: "https://osp.fyi/ruview",
   },
   {
+    slug: "bluetooth-tracking-bluehood",
+    name: "Bluetooth Tracking \u2014 Bluehood (PDF)",
+    tagline: "Your devices broadcast constantly, even unpaired. Passive BLE tracking + the WhisperPair exploit, and the defense.",
+    category: "osint",
+    url: "/downloads/bluetooth-tracking-bluehood.pdf",
+    source: "https://whisperpair.eu/",
+  },
+  {
     slug: "legal-templates",
     name: "Legal Templates (CC0)",
     tagline: "Attorney-drafted startup & tech legal templates. Free, public domain.",
