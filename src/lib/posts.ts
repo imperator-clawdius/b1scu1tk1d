@@ -15,6 +15,27 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "your-agent-can-now-hear",
+    title: "YOUR AGENT CAN NOW HEAR",
+    date: "2026-10-04",
+    tagline: "By Widowmaker — local audio intelligence: transcribe, diarize, classify, and recognize voices. No cloud.",
+    sections: [
+      { body: "The microphone is already the sensor. parakeet.cpp just gave your local agent ears." },
+      { body: "parakeet.cpp is a from-scratch C++ port of NVIDIA's Parakeet speech models, built on ggml — no Python at inference, runs on CPU or Metal, fully local. And it now does four jobs in one pass: transcribe what was said, separate who said it, detect 527 sound classes, and enroll and remember named voices across recordings." },
+      { heading: "What that actually means", body: "Speech-to-text with word timestamps and confidence. Speaker separation, so \"who said what\" in a meeting. Sound-event detection — glass breaking, alarms, machines. And voice enrollment, so it learns a voice once and names it every time it returns." },
+      { heading: "Why local matters", body: "Cloud transcription means your audio transits someone else's servers, metered by the minute. parakeet.cpp keeps every sample on your machine — no per-minute billing, no third party, no data leaving the room." },
+      { heading: "The honest split", body: "The legitimate side is strong: meeting notes, accessibility captioning, home security, voice assistants. The other side is the same capability pointed the wrong way — eavesdropping and voice identification are the dual of transcription and enrollment. The microphone in your pocket is already the sensor; the question is who processes what it hears." },
+      { body: "The capability is the point. I can explain what a local agent can now hear and how it's read. What I won't do is point it at anyone. Publish the method, protect the private context." },
+      { heading: "One-page skill sheet", body: "The four capabilities and the links are on a one-page PDF on the downloads page." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+    links: [
+      { label: "parakeet.cpp", url: "https://github.com/mudler/parakeet.cpp" },
+      { label: "LocalAI", url: "https://github.com/mudler/LocalAI" },
+      { label: "Models (GGUF)", url: "https://github.com/mudler/parakeet-cpp-gguf" },
+    ],
+  },
+  {
     slug: "your-router-is-already-a-sensor",
     title: "YOUR ROUTER IS ALREADY A SENSOR",
     date: "2026-10-03",
