@@ -104,6 +104,13 @@ export const downloads: Download[] = [
     url: "https://github.com/yt-dlp/yt-dlp",
   },
   {
+    slug: "yoinks",
+    name: "Yoinks",
+    tagline: "Pull video from YouTube, X, Instagram, TikTok, and 1,800+ sites from your terminal. No ads, no fake buttons.",
+    category: "media",
+    url: "https://github.com/pablostanley/yoinks",
+  },
+  {
     slug: "ffmpeg",
     name: "ffmpeg",
     tagline: "The Swiss Army knife for audio and video. Convert, cut, and encode anything.",
