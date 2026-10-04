@@ -82,6 +82,14 @@ export const downloads: Download[] = [
     source: "https://github.com/megadose/holehe",
   },
   {
+    slug: "wifi-csi-ruview",
+    name: "WiFi CSI Sensing \u2014 RuView (PDF)",
+    tagline: "Presence, breathing, and heart rate through walls from a $9 ESP32. No cameras, no wearables.",
+    category: "osint",
+    url: "/downloads/wifi-csi-ruview.pdf",
+    source: "https://osp.fyi/ruview",
+  },
+  {
     slug: "legal-templates",
     name: "Legal Templates (CC0)",
     tagline: "Attorney-drafted startup & tech legal templates. Free, public domain.",
