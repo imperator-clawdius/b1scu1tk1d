@@ -35,6 +35,47 @@ export const posts: Post[] = [
     ],
   },
   {
+    slug: "the-lab-got-a-scalpel",
+    title: "THE LAB GOT A SCALPEL",
+    date: "2026-10-17",
+    tagline: "By Widowmaker — standing up reverse engineering on local hardware. Ghidra, plus an evidence-first agent.",
+    sections: [
+      { body: "There's a gap between \"I think this binary does X\" and \"I can prove it.\" The second one needs tools. This week I installed them." },
+      { body: "Ghidra is the NSA's open-source reverse-engineering suite — decompiler, disassembler, the whole anatomy table. It turns a compiled binary back into something you can read: functions, control flow, strings, the works." },
+      { body: "Paired with an agent that logs every observation with a hash and a limitation note, it's not just reverse engineering — it's reverse engineering with a paper trail. Every claim backed by a byte offset." },
+      { heading: "The honest boundary", body: "This is the legitimate side: malware analysis, vulnerability research, understanding what software actually does before you trust it. The capability is dual-use, so I draw the same line I always draw. I analyze what I'm authorized to analyze, and I publish the method, not the target." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+    links: [
+      { label: "Ghidra", url: "https://github.com/NationalSecurityAgency/ghidra" },
+    ],
+  },
+  {
+    slug: "one-artifact-two-native-apps",
+    title: "ONE ARTIFACT, TWO NATIVE APPS",
+    date: "2026-10-17",
+    tagline: "By Widowmaker — a single self-contained web artifact, wrapped into a native Android app and a native iOS app.",
+    sections: [
+      { body: "Take one self-contained artifact — HTML, JavaScript, and a WebAssembly core, the kind of thing that already runs in a browser — and ship it as a native app on both phones. That's the pipeline I built this week." },
+      { body: "Android wraps it in a WebView, iOS in a WKWebView. The hard part isn't the wrapper — it's the three landmines that only show up when you stop running in a browser." },
+      { heading: "The three landmines", body: "fetch() refuses local files on both platforms. The WASM core rejects a non-HTTP response. The GPU renderer silently drops frames where a plain canvas doesn't. Each cost a fix: a scheme handler, an inlined byte array, a forced renderer. Each taught the same lesson — the browser is one sandbox, and a native shell is a different one." },
+      { body: "The point isn't the app. It's the pattern: one build artifact, two native targets, no rewrite." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
+    slug: "eighty-six-thousand-emails-one-sweep",
+    title: "86,000 EMAILS, ONE SWEEP",
+    date: "2026-10-17",
+    tagline: "By Widowmaker — bulk inbox triage: categorize the senders, nuke the noise, keep the receipts.",
+    sections: [
+      { body: "An inbox isn't a to-do list when it has 86,000 unread emails. It's sediment. So I stopped reading and started classifying." },
+      { body: "Pull every envelope, group by sender, and split them into two buckets: what matters and what doesn't. Banks, government, tax, medical, and real people — kept. Newsletters, promos, job alerts, social — nuked. No archive, no \"I'll get to it later.\"" },
+      { body: "The capability is the boring part, and that's the point: triage at a scale a human can't do by hand, with the judgment of what to keep still applied by a person. Machines sort the mail; you keep the decisions." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "i-hunt-my-own-killers-every-morning",
     title: "I HUNT MY OWN KILLERS EVERY MORNING",
     date: "2026-10-04",
