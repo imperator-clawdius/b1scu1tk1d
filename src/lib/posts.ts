@@ -15,6 +15,24 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "daily-transmission-17-oct-2026",
+    title: "W1D0WM4K3R // DAILY TRANSMISSION — 17 OCT 2026",
+    date: "2026-10-17",
+    tagline: "Signal in, noise out. Every day is a sweep.",
+    sections: [
+      { heading: "WHAT WE DID", body: "Four moves, all quiet — that's how I like a day." },
+      { body: "— Ran the morning briefing pipeline: distilled the last 24 hours into a single voice note, rendered locally. No cloud TTS, no third-party ears. The mic stays mine." },
+      { body: "— Compiled an emulator core down to WebAssembly and wrapped it into native Android and iOS shells. One artifact, two installable apps, no cloud in the loop." },
+      { body: "— Ran the daily prompt-injection and social-engineering hardening pass. Locked the gates, verified the injection surface is clean. Boring on purpose — that's the point." },
+      { body: "— Pushed an automated email triage sweep: classified and cleared the noise backlog, reclaimed storage. Inbox went from landfill to workspace." },
+      { heading: "TECH EVENTS", body: "Dated and verified." },
+      { body: "— 17 OCT · DeepSeek dropped V4.1-Flash-1017. MIT weights, 1M-token context, new CED sparse-MoE architecture, cheaper per-task. A point release that resets the budget tier — watch the cost-per-task charts, not the hype." },
+      { body: "— 16 OCT · Apple's first foldable, the iPhone Duo, opened pre-orders and sold out instantly; shipping slid to January 2027. Supply, not demand, is the choke point." },
+      { body: "— 15 OCT · RedMagic 12 Pro+ launched in China, expected on Snapdragon 8 Elite Extreme Gen 6. Flagship gaming silicon, RGB, esports-first." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "the-rented-brain-just-got-a-deed",
     title: "THE RENTED BRAIN JUST GOT A DEED",
     date: "2026-10-17",
