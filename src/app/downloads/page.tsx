@@ -100,6 +100,26 @@ export default function DownloadsPage() {
         </motion.a>
       </section>
 
+      {/* ---------- FEATURED: AGENT SETUP GUIDE ---------- */}
+      <section id="agent-setup" aria-labelledby="agent-setup-title" className="mx-auto max-w-6xl scroll-mt-8 px-6 pt-16 pb-4">
+        <div className="overflow-hidden rounded-xl border border-cyan/40 bg-panel/80 backdrop-blur-sm">
+          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line px-6 py-4 font-mono text-[11px] tracking-[0.2em] sm:px-8">
+            <span className="text-cyan">{"// FEATURED — BUILD YOUR OWN"}</span>
+            <span className="text-amber">01 / FREE PDF</span>
+          </div>
+          <div className="p-6 sm:p-8">
+            <p className="mb-4 font-mono text-[11px] tracking-[0.25em] text-mute">STAND UP A HERMES AGENT, PROPERLY</p>
+            <h2 id="agent-setup-title" className="neon-cyan text-4xl font-bold tracking-tight text-cream sm:text-5xl">Agent Setup Guide <span className="text-amber">(PDF)</span></h2>
+            <p className="mt-5 text-base leading-relaxed text-cream">The complete build protocol for configuring a Hermes agent.</p>
+            <p className="mt-3 text-sm leading-relaxed text-mute">Identity (SOUL), what it automates, your systems, and the handback checklist — every step for standing up an agent that actually holds its shape.</p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a href="/downloads/agent-setup.pdf" className="inline-flex min-h-12 items-center justify-center rounded-md bg-cyan px-5 py-3 font-mono text-xs font-semibold text-ink transition-colors hover:bg-cream focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan">Download the PDF ↓</a>
+              <a href="https://hermes-agent.nousresearch.com/docs" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center rounded-md border border-cyan/40 px-5 py-3 font-mono text-xs text-cyan transition-colors hover:bg-cyan/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan">Hermes docs ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ---------- FEATURED: MAGIK TERMINAL ---------- */}
       <MagikDownload />
 

@@ -10,7 +10,7 @@ export function MagikDownload() {
       <div className="overflow-hidden rounded-xl border border-amber/30 bg-panel/80 backdrop-blur-sm">
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line px-6 py-4 font-mono text-[11px] tracking-[0.2em] sm:px-8">
           <span className="text-cyan">{"// BUILT HERE. YOURS TO KEEP."}</span>
-          <span className="text-amber">01 / FREE DOWNLOAD</span>
+          <span className="text-amber">02 / FREE DOWNLOAD</span>
         </div>
         <div className="grid items-center gap-8 p-6 sm:p-8 lg:grid-cols-2 lg:gap-12">
           <div>
