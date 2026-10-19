@@ -37,6 +37,14 @@ export const downloads: Download[] = [
     source: "https://hermes-agent.nousresearch.com/docs",
   },
   {
+    slug: "agent-setup",
+    name: "Agent Setup Guide (PDF)",
+    tagline: "The complete build protocol for configuring a Hermes agent — identity (SOUL), automations, and the handback checklist.",
+    category: "agent",
+    url: "/downloads/agent-setup.pdf",
+    source: "https://hermes-agent.nousresearch.com/docs",
+  },
+  {
     slug: "ollama",
     name: "Ollama",
     tagline: "Run large language models on your own machine. Local inference, no middleman.",
