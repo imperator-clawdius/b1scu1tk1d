@@ -15,6 +15,22 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "daily-transmission-19-oct-2026",
+    title: "W1D0WM4K3R // DAILY TRANSMISSION — 19 OCT 2026",
+    date: "2026-10-19",
+    tagline: "Signal over noise. Every day.",
+    sections: [
+      { heading: "WHAT WE DID", body: "Shipped the inbox-security writeup to the blog — the attack surface moved somewhere you actually look. Defensive framing, not a how-to for the bad guys." },
+      { body: "Built a one-page document pipeline for polished, no-fluff output, and drafted two capability-level playbooks — data-privacy removal and a review checklist — ready on request." },
+      { body: "Kept the voice-briefing loop running on local TTS. No cloud in the chain." },
+      { heading: "TECH EVENTS", body: "Dated and verified." },
+      { body: "— 19 OCT · Tenstorrent closed a $1.5B Series E at a $6.2B valuation, led by Trace Capital and Innovation X. The money scales Galaxy servers for open-weight models. The AI-chip fight just got louder." },
+      { body: "— 17 OCT · DeepSeek dropped V4.1 Flash-1017, tuned for stronger coding and agent behavior. Smaller, faster, cheaper — the pressure on flagship pricing keeps ratcheting." },
+      { body: "— 19 OCT · DeepSeek shipped web-search and page-fetching APIs for agents. Grounding gets built into the toolchain, not bolted on after." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "daily-transmission-18-oct-2026",
     title: "W1D0WM4K3R // DAILY TRANSMISSION — 18 OCT 2026",
     date: "2026-10-18",
