@@ -231,6 +231,44 @@ const SHAPES: Record<SharkKind, SharkShape> = {
     gills: [0.14, 0.22],
     tint: [0.23, 0.9, 0.8],
   },
+  // Manta ray: broad swept wings fused into a diamond disc, blunt head, thin whip tail.
+  manta: {
+    halfWidth: (s) => {
+      if (s < 0.14) return 0.07 * Math.pow(Math.sin((s / 0.14) * Math.PI / 2), 0.75);
+      if (s < 0.52) return 0.07 + 0.29 * Math.pow(Math.sin(((s - 0.14) / 0.38) * Math.PI), 0.9);
+      if (s < 0.86) return 0.29 * Math.pow(1 - (s - 0.52) / 0.34, 1.25);
+      const k = (s - 0.86) / 0.14;
+      return 0.014 * (1 - k) + 0.005 * Math.sin(k * Math.PI);
+    },
+    pectoral: [0, 0, 0, 0],
+    falcate: false,
+    pelvic: [0, 0, 0, 0],
+    caudal: 0,
+    dorsal: [0, 0],
+    secondDorsal: [0, 0],
+    eye: [0.04, 0.08],
+    gills: [0.1, 0.18],
+    tint: [0.95, 0.72, 0.3],
+  },
+  // Stingray: rounder oval disc, thin tapering tail.
+  stingray: {
+    halfWidth: (s) => {
+      if (s < 0.12) return 0.06 * Math.pow(Math.sin((s / 0.12) * Math.PI / 2), 0.6);
+      if (s < 0.6) return 0.06 + 0.23 * Math.pow(Math.sin(((s - 0.12) / 0.48) * Math.PI), 0.7);
+      if (s < 0.84) return 0.23 * Math.pow(1 - (s - 0.6) / 0.24, 1.4);
+      const k = (s - 0.84) / 0.16;
+      return 0.009 * (1 - k);
+    },
+    pectoral: [0, 0, 0, 0],
+    falcate: false,
+    pelvic: [0, 0, 0, 0],
+    caudal: 0,
+    dorsal: [0, 0],
+    secondDorsal: [0, 0],
+    eye: [0.04, 0.08],
+    gills: [0.09, 0.16],
+    tint: [0.23, 0.9, 0.8],
+  },
 };
 
 const KINDS = Object.keys(SHAPES) as SharkKind[];
