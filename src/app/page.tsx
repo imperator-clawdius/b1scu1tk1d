@@ -8,6 +8,7 @@ import {
   type Biscuit,
 } from "@/lib/biscuits";
 import { posts, type Post } from "@/lib/posts";
+import { AsciiOcean } from "@/components/ascii-ocean/AsciiOcean";
 
 const MONTHS = [
   "JAN",
@@ -202,6 +203,20 @@ export default function Home() {
           <span className="ml-auto hidden md:block tracking-[0.15em]">
             A LIVE ARCHIVE OF COOL INTERNET FINDS
           </span>
+        </div>
+      </section>
+
+      {/* ---------- OCEAN BAND ---------- */}
+      <section aria-hidden="true" className="mx-auto w-full max-w-6xl px-6 pt-10">
+        <div className="overflow-hidden rounded-xl border border-line bg-ink">
+          <AsciiOcean
+            className="block h-[300px] w-full font-mono sm:h-[340px]"
+            sharks={[
+              { kind: "hammerhead", size: 1 },
+              { kind: "classic", size: 0.62 },
+              { kind: "mako", size: 0.5 },
+            ]}
+          />
         </div>
       </section>
 
