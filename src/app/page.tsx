@@ -215,9 +215,9 @@ export default function Home() {
               { kind: "hammerhead", size: 1 },
               { kind: "classic", size: 0.62 },
               { kind: "mako", size: 0.5 },
-              { kind: "manta", size: 0.46 },
-              { kind: "manta", size: 0.38 },
-              { kind: "stingray", size: 0.32 },
+              { kind: "tiger", size: 0.4 },
+              { kind: "zebra", size: 0.34 },
+              { kind: "thresher", size: 0.26 },
             ]}
           />
         </div>
