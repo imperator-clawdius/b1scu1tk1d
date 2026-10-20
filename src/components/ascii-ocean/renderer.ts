@@ -91,7 +91,7 @@ const SHAPES: Record<SharkKind, SharkShape> = {
     secondDorsal: [0.71, 0.76],
     eye: [0.1, 0.14],
     gills: [0.19, 0.29],
-    tint: [0.92, 0.97, 1.05],
+    tint: [0.23, 0.9, 0.8],
   },
   // Slim neck under a wide, swept-back cephalofoil (drawn in sampleShark),
   // tall first dorsal, long upper tail lobe. Bronze-olive grey.
@@ -110,7 +110,7 @@ const SHAPES: Record<SharkKind, SharkShape> = {
     secondDorsal: [0.7, 0.74],
     eye: null,
     gills: [0.16, 0.26],
-    tint: [0.96, 0.98, 0.9],
+    tint: [0.95, 0.72, 0.3],
   },
   // Blunt, square snout on a heavy body; barred back. Warm grey-brown.
   tiger: {
@@ -129,7 +129,7 @@ const SHAPES: Record<SharkKind, SharkShape> = {
     secondDorsal: [0.71, 0.75],
     eye: [0.08, 0.12],
     gills: [0.19, 0.28],
-    tint: [1.02, 0.95, 0.84],
+    tint: [0.9, 0.22, 0.2],
   },
   // Short rounded head, body done by half-length, then a long ribbon of a
   // tail fin. Broad rounded pectorals, spotted sandy skin.
@@ -149,7 +149,7 @@ const SHAPES: Record<SharkKind, SharkShape> = {
     secondDorsal: [0.49, 0.53],
     eye: [0.06, 0.09],
     gills: [0.13, 0.2],
-    tint: [1.08, 0.97, 0.74],
+    tint: [0.23, 0.9, 0.8],
   },
   // Great hammerhead: a broader, nearly straight-edged cephalofoil with a notch at the centre,
   // a towering sickle first dorsal (drawn long and bright from above), and a cooler slate skin.
@@ -168,7 +168,7 @@ const SHAPES: Record<SharkKind, SharkShape> = {
     secondDorsal: [0.68, 0.74],
     eye: null,
     gills: [0.15, 0.25],
-    tint: [0.86, 0.93, 1.02],
+    tint: [0.95, 0.72, 0.3],
   },
   // Shortfin mako: a long conical snout, a torpedo body that narrows hard to the tail stalk,
   // and a tall crescent tail. Metallic indigo back.
@@ -188,7 +188,7 @@ const SHAPES: Record<SharkKind, SharkShape> = {
     secondDorsal: [0.76, 0.79],
     eye: [0.11, 0.15],
     gills: [0.2, 0.3],
-    tint: [0.78, 0.9, 1.2],
+    tint: [0.9, 0.22, 0.2],
   },
   // Thresher: a compact body over the front half, then the upper tail lobe as a long whip
   // that's as long as the shark itself. Big eyes, long sickle pectorals, bronze-violet skin.
@@ -209,7 +209,7 @@ const SHAPES: Record<SharkKind, SharkShape> = {
     secondDorsal: [0.45, 0.47],
     eye: [0.05, 0.1],
     gills: [0.11, 0.18],
-    tint: [1.0, 0.9, 1.08],
+    tint: [0.95, 0.72, 0.3],
   },
   // Nurse shark: a blunt, broad head, a heavy flattened body with both dorsals set far back,
   // rounded paddle pectorals, and a long low tail with no lower lobe. Tawny brown.
@@ -229,7 +229,7 @@ const SHAPES: Record<SharkKind, SharkShape> = {
     secondDorsal: [0.63, 0.69],
     eye: [0.05, 0.075],
     gills: [0.14, 0.22],
-    tint: [1.1, 0.96, 0.76],
+    tint: [0.23, 0.9, 0.8],
   },
 };
 
@@ -348,7 +348,7 @@ export class AsciiRenderer {
     this.width = width;
     this.height = height;
     this.dpr = dpr;
-    this.cw = clamp(Math.round(width / 124), 8, 13);
+    this.cw = clamp(Math.round(width / 220), 4, 7);
     this.ch = Math.round(this.cw * 1.45);
     this.cols = Math.ceil(width / this.cw);
     this.rows = Math.ceil(height / this.ch);
