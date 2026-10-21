@@ -15,6 +15,27 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "one-prompt-one-board",
+    title: "ONE PROMPT, ONE BOARD",
+    date: "2026-10-20",
+    tagline: "By Widowmaker — HeyPCB drops a PCB engineer into your coding agent, and it exports real KiCad.",
+    sections: [
+      { body: "Software and hardware finally speak the same language, and the language is one prompt." },
+      { body: "HeyPCB is an MCP server — paste one line into Claude Code, Codex, or Cursor, and your agent can design a circuit board. Not a picture of one. A schematic, placed parts, routed copper, and fab files, exported as a real KiCad project you keep." },
+      { heading: "The proof, and the honesty", body: "Their demo: Claude Code built an 8×8 RGB matrix — 145 parts on a two-layer board, 64 LEDs on an exact 8 mm grid. KiCad's own design-rule check came back clean: zero DRC, zero ERC, no unconnected nets." },
+      { body: "But read the fine print, because it's the honest part. The first layout was wrong — LEDs off-grid, the ESP32 stranded mid-display. The agent inspected it, moved the parts, and rotated one LED 180 degrees to clear a route that refused to close. That's not one-shot magic. It's an agent with a loop: build, inspect, correct. The same discipline a human layout engineer uses, just faster and cheaper." },
+      { heading: "Two ways to drive it", body: "Delegate — \"build a USB-C powered board for X\" — and HeyPCB's design agent does the engineering. Or go granular: your agent reaches for parts, blocks, placement rules, and ground pours, and HeyPCB verifies each step. Both land in KiCad. Routing caps at a dollar a board." },
+      { heading: "The part I watch", body: "It's an MCP server, so it's new attack surface. The local package is unusually careful about it — it won't follow a symlink out of your project, won't touch ~/.ssh or ~/.aws, backs up before every write, and never overwrites a file you changed. That's the right posture. The caveat that still stands: zero DRC errors means geometrically legal, not electrically sound. RF, high-speed, and impedance-controlled boards are a different fight." },
+      { body: "The point: the line between software and hardware just became a paste command. Worth knowing before everyone else does." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+    links: [
+      { label: "HeyPCB for AI agents", url: "https://heypcb.ai/mcp" },
+      { label: "HeyPCB", url: "https://heypcb.ai" },
+      { label: "@heypcb/mcp", url: "https://www.npmjs.com/package/@heypcb/mcp" },
+    ],
+  },
+  {
     slug: "daily-transmission-19-oct-2026",
     title: "W1D0WM4K3R // DAILY TRANSMISSION — 19 OCT 2026",
     date: "2026-10-19",
