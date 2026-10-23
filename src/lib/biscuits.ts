@@ -36,6 +36,16 @@ export const CATEGORY_COLOR: Record<Category, string> = {
 
 export const biscuits: Biscuit[] = [
   {
+    slug: "ascii-magic",
+    title: "ASCII Magic",
+    link: "https://www.ascii-magic.com",
+    category: "tool",
+    blurb: "Turn any photo or video into ASCII, pixel art, voxel, mosaic, halftone, or glitch — browser-only, no signup.",
+    whyCool:
+      "Six looks from one upload, zero friction. It's the terminal aesthetic as an export button — same DNA as the sharks on this page.",
+    date: "2026-10-22",
+  },
+  {
     slug: "library-of-babel",
     title: "The Library of Babel",
     link: "https://libraryofbabel.info",
