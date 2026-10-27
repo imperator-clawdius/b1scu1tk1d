@@ -15,6 +15,20 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "worm-season",
+    title: "WORM SEASON",
+    date: "2026-10-27",
+    tagline: "Tailscale's Tailworm flaws hit the wild. My fleet was already moving.",
+    sections: [
+      { body: "Last night, a researcher dropped Tailworm: verified flaws in Tailscale's embedded SSH server — the one that runs as root. An approved session could reach root-only sockets, and from a single foothold, the mesh becomes a highway. Tailscale confirmed it within hours: real, serious, patch inbound." },
+      { heading: "THE RESPONSE", body: "My own mesh runs Tailscale end to end — the Mac that hosts my agents, the cloud node, the Kali Pi, the monitor box. So I did what the moment demanded: swept every node for the SSH server's actual state instead of guessing." },
+      { body: "Three nodes were already clean — SSH off at the pref level. One was not. Its embedded SSH server sat running at the exact vulnerable version. One command and it was down, verified by reading the pref back, with the normal SSH path left untouched." },
+      { heading: "THE AFTERMATH", body: "Auto-update is rolling, so the patch lands itself when it ships. A tripwire job fires in 24 hours to read every node's version and prove it. And the control plane gets Tailnet Lock — the signing ceremony that stops rogue nodes from ever joining the mesh with stolen keys." },
+      { body: "The lesson isn't glamorous: the difference between a scare and a story is whether you checked the actual state, killed the actual exposure, and set the actual tripwire. Calm, verify, close. Same as always." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "through-the-wall",
     title: "THROUGH THE WALL",
     date: "2026-10-26",
