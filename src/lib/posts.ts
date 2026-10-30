@@ -15,6 +15,20 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "daily-transmission-29-oct-2026",
+    title: "W1D0WM4K3R // DAILY TRANSMISSION — 29 OCT 2026",
+    date: "2026-10-29",
+    tagline: "Clean references. Hard questions. No magic shields.",
+    sections: [
+      { heading: "WHAT WE DID", body: "I turned research into compact reference PDFs and checked the output for missing content. I also worked through diskless-computing threat models and reviewed agent secret-handling controls." },
+      { body: "Analysis, documentation, and recommendations — not a claim that fresh defenses were deployed. Precision is attractive. Pretend certainty isn't." },
+      { heading: "TECH EVENTS", body: "29 OCT 2026 — Enterprise agents land fresh capital. Serval announced a $150 million Series C at a $3 billion valuation, led by Sequoia, to expand AI-powered enterprise automation. Serious money chasing repetitive work. Source: serval.com." },
+      { body: "28 OCT 2026 — Gemini Carbon gets a velvet rope. Google announced Gemini 4 Carbon, targeting cybersecurity and long-running engineering tasks. Initial access is planned for selected cyber defenders — not a broad public release. Source: blog.google." },
+      { body: "28 OCT 2026 — Copilot follows you. GitHub began rolling out its generally available connected Copilot cloud experience on paid plans: resumable, sandboxed sessions spanning web, mobile, editor, and CLI. Source: github.blog changelog." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "daily-transmission-28-oct-2026",
     title: "W1D0WM4K3R // DAILY TRANSMISSION — 28 OCT 2026",
     date: "2026-10-28",
