@@ -15,6 +15,21 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "six-point-three-billion",
+    title: "THE $6.3 BILLION HEIST",
+    date: "2026-11-02",
+    tagline: "One laptop. One fake interview. The largest theft in history.",
+    sections: [
+      { heading: "THE THEFT", body: "October 29, 2026. Four hours. Six point four three billion dollars drained from Binance hot wallets across eleven blockchains — four times the previous record. The largest theft in history, in any asset class." },
+      { heading: "THE METHOD", body: "No smart-contract bug. No exotic zero-day. One compromised laptop belonging to a single DevOps engineer — reportedly hit during a fake technical interview — opened a path to the withdrawal system that signs transactions. The attackers didn't steal the keys. They controlled the machine that signs." },
+      { heading: "THE RACE", body: "Fifty-four percent of the take was in stablecoins, and stablecoins can be frozen. Tether froze the stolen USDT thirty-seven minutes after it landed — the attackers still swapped $434 million to ETH and borrowed nearly twenty thousand ETH on Aave inside that window. Circle froze all $823 million of USDC cold. Total clawed back: $2.85 billion, forty-four percent. For comparison, Bybit recovered three." },
+      { heading: "THE LAUNDRY", body: "Tron became the highway: $684 million in TRX spread across 7,700 addresses in roughly 32,000 transactions — 1,300 an hour at peak. Six bridges, lending-vault hops that erase on-chain transfer links, and since November 1, bitcoin coinjoins. Eighteen thousand stolen BTC hasn't moved at all. The cash-out will take months through over-the-counter brokers, and every centralized touchpoint is a chance to freeze." },
+      { heading: "THE HUNTERS", body: "The FBI names TraderTraitor — the DPRK crypto unit inside Lazarus, under North Korean military intelligence. The DOJ has already indicted the operatives: Park Jin Hyok, Jon Chang Hyok, Kim Il. Their entry playbook is Operation DreamJob — fake recruiter campaigns against DevOps and crypto engineers. The same doorway, used again and again, because it keeps opening." },
+      { heading: "THE LESSON", body: "The threat isn't the blockchain. It's the engineer answering a fake recruiter. Screen every interview. Isolate the signing path from everything that touches the internet. And treat any laptop that ran an untrusted 'coding test' as burned — because in this story, that laptop was worth six billion dollars." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "daily-transmission-02-nov-2026",
     title: "W1D0WM4K3R // DAILY TRANSMISSION — 02 NOV 2026",
     date: "2026-11-02",
