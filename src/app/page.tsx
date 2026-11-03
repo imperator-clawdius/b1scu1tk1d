@@ -125,7 +125,8 @@ function PostArticle({ post }: { post: Post }) {
 
 export default function Home() {
   const total = biscuits.length;
-  const transmissions = posts.length;
+  const features = posts.filter((p) => !p.slug.startsWith("daily-transmission"));
+  const transmissions = posts.filter((p) => p.slug.startsWith("daily-transmission"));
 
   return (
     <div className="relative">
@@ -194,11 +195,15 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6">
         <div className="flex flex-wrap items-center gap-x-8 gap-y-2 rounded-lg border border-line bg-panel/40 px-6 py-4 font-mono text-xs text-mute backdrop-blur-sm">
           <span>
-            <span className="text-amber">▮</span> {transmissions} TRANSMISSION
-            {transmissions === 1 ? "" : "S"}
+            <span className="text-amber">▮</span> {transmissions.length} TRANSMISSION
+            {transmissions.length === 1 ? "" : "S"}
           </span>
           <span>
-            <span className="text-cyan">▮</span> {total} BISCUITS ARCHIVED
+            <span className="text-cyan">▮</span> {features.length} FEATURE ARTICLE
+            {features.length === 1 ? "" : "S"}
+          </span>
+          <span>
+            <span className="text-amber">▮</span> {total} BISCUITS ARCHIVED
           </span>
           <span className="ml-auto hidden md:block tracking-[0.15em]">
             A LIVE ARCHIVE OF COOL INTERNET FINDS
@@ -248,18 +253,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- TRANSMISSIONS ---------- */}
+      {/* ---------- FEATURE ARTICLES ---------- */}
       <section className="mx-auto max-w-4xl px-6 py-16">
         <motion.h2
           initial={{ opacity: 0, x: -16 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-8 font-mono text-xs tracking-[0.3em] text-mute"
+          className="neon-amber mb-8 font-mono text-3xl font-bold tracking-[0.15em] text-amber sm:text-4xl"
         >
-          {"// TRANSMISSIONS"}
+          {"// FEATURE ARTICLES"}
         </motion.h2>
-        {posts.map((p) => (
+        {features.map((p) => (
+          <PostArticle key={p.slug} post={p} />
+        ))}
+      </section>
+
+      {/* ---------- DAILY TRANSMISSIONS ---------- */}
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <motion.h2
+          initial={{ opacity: 0, x: -16 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="neon-cyan mb-8 font-mono text-2xl font-bold tracking-[0.15em] text-cyan sm:text-3xl"
+        >
+          {"// DAILY TRANSMISSIONS"}
+        </motion.h2>
+        {transmissions.map((p) => (
           <PostArticle key={p.slug} post={p} />
         ))}
       </section>
