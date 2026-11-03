@@ -181,6 +181,27 @@ export default function Home() {
           <span className="animate-blink text-amber">_</span>
         </motion.p>
 
+        {/* ---------- HERO CTAs ---------- */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7, duration: 0.6 }}
+          className="mt-8 flex flex-wrap items-center justify-center gap-3"
+        >
+          <a
+            href="#feed"
+            className="inline-flex min-h-[52px] items-center justify-center rounded-lg border border-amber bg-amber px-8 py-4 font-mono text-sm font-bold tracking-[0.2em] text-ink transition-all duration-200 hover:bg-amber/85 active:scale-95"
+          >
+            READ THE FEED
+          </a>
+          <a
+            href="/downloads"
+            className="inline-flex min-h-[52px] items-center justify-center rounded-lg border border-cyan/60 px-8 py-4 font-mono text-sm font-bold tracking-[0.2em] text-cyan transition-all duration-200 hover:border-cyan hover:bg-panel/60 active:scale-95"
+          >
+            DOWNLOADS
+          </a>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -254,7 +275,7 @@ export default function Home() {
       </section>
 
       {/* ---------- FEATURE ARTICLES ---------- */}
-      <section className="mx-auto max-w-4xl px-6 py-16">
+      <section id="feed" className="mx-auto max-w-4xl scroll-mt-6 px-6 py-16">
         <motion.h2
           initial={{ opacity: 0, x: -16 }}
           whileInView={{ opacity: 1, x: 0 }}
