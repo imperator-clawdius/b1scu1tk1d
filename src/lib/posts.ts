@@ -15,6 +15,21 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "opsec-playbook",
+    title: "THE OPSEC STANDARD",
+    date: "2026-11-03",
+    tagline: "Government framework, field tips, one playbook. Free to take.",
+    sections: [
+      { heading: "WHAT OPSEC IS", body: "Operations Security is the process of denying adversaries the information they need to hurt you. DoD runs it as a five-step cycle: identify critical information, analyze the threat, analyze vulnerabilities, assess risk, apply countermeasures. Then repeat — it is a loop, not a checklist." },
+      { heading: "THE GAP THIS FILLS", body: "Small teams skip OPSEC because it sounds military. Adversaries count on that. Government standards tell you WHAT to protect but read like procurement law. Field hackers tell you what actually gets people owned but rarely map it to a framework. This playbook welds the two together: every countermeasure is mapped to its NIST 800-53 control, its CMMC 2.0 practice, and the corresponding field tip from 0day Ryan Montgomery — password managers, credit freezes, RFID wallets, the click discipline, all of it." },
+      { heading: "THE TEN COUNTERMEASURES", body: "One password manager, unique passwords, no reuse. MFA everywhere, phishing-resistant where it counts. Never open unexpected attachments, never enable macros — verify the domain, not the display name. Patch within days. Freeze your credit at all three bureaus, yourself and family. Minimize public data; opt out of brokers; Google yourself quarterly. No travel plans, badges, sites, or org charts on social. RFID-blocking wallet, clean desk, lock screens. Heed browser warnings. Monitor for breach exposure. Every one of these is mapped in the playbook to the exact control a compliance auditor will ask about." },
+      { heading: "THE 0DAY CROSS-REFERENCE", body: "Ryan Montgomery's demos exist to prove one thing: from a name and one phone number, your whole address history is minutes away. His published tips — password manager, credit freeze, RFID wallet, antivirus, click discipline, breach monitoring — are the field layer on top of the framework. His signature move is freezing credit, demonstrated on camera with the warning that most people have never done it for themselves, let alone their family." },
+      { heading: "WHEN IT SLIPS", body: "Report in hour zero. Disconnect, change credentials from clean hardware, preserve the evidence. Assume email compromise until proven otherwise, and notify affected parties the moment facts are known. Speed beats shame — a fast report of a near-miss is a win." },
+      { heading: "THE DOWNLOAD", body: "The full playbook — four pages including a print-and-post quick-reference card — is on the downloads page. Free to share. Standard practice, no secrets inside." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "six-point-three-billion",
     title: "THE $6.3 BILLION HEIST",
     date: "2026-11-02",

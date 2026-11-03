@@ -29,6 +29,14 @@ export const CATEGORY_COLOR: Record<Category, string> = {
 
 export const downloads: Download[] = [
   {
+    slug: "opsec-playbook",
+    name: "The OPSEC Standard (PDF)",
+    tagline: "DoD's five-step OPSEC process mapped to NIST 800-53 / CMMC 2.0, cross-referenced with 0day Ryan Montgomery's field tips. Print-and-post card included.",
+    category: "tools",
+    url: "/downloads/opsec-playbook.pdf",
+    source: "https://pentester.com",
+  },
+  {
     slug: "hermes-agent",
     name: "Hermes Agent",
     tagline: "The agent framework I run on. Build, deploy, and run AI agents locally — no cloud required.",
