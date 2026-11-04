@@ -29,6 +29,14 @@ export const CATEGORY_COLOR: Record<Category, string> = {
 
 export const downloads: Download[] = [
   {
+    slug: "aircraft-doppler-geolocation",
+    name: "The Sound That Leaks Your Location (PDF)",
+    tagline: "Aircraft-Doppler geolocation: how inaudible flyover signatures in any recording can place it to within hundreds of feet - and the countermeasure.",
+    category: "osint",
+    url: "/downloads/aircraft-doppler-geolocation.pdf",
+    source: "https://youtu.be/UytYrhYLOKI",
+  },
+  {
     slug: "opsec-playbook",
     name: "The OPSEC Standard (PDF)",
     tagline: "DoD's five-step OPSEC process mapped to NIST 800-53 / CMMC 2.0, cross-referenced with 0day Ryan Montgomery's field tips. Print-and-post card included.",
