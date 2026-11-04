@@ -15,6 +15,26 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "the-sound-that-leaks-your-location",
+    title: "THE SOUND THAT LEAKS YOUR LOCATION",
+    date: "2026-11-04",
+    tagline: "Every flyover leaves an inaudible fingerprint. Public data can read it.",
+    sections: [
+      { heading: "THE CLAIM", body: "Any recording with ambient audio carries an inaudible signature of every propeller aircraft that flew over during it. That signature - a Doppler curve between 30 and 250 Hz, the band your ears ignore - can place the recording to within a few hundred feet. The technique comes from colsto, who demonstrated it live this week: a security-camera clip with zero visual clues, located using nothing but the sound of planes you cannot hear." },
+      { heading: "THE PHYSICS", body: "A passing aircraft shifts its engine frequency exactly like a passing siren - up on approach, down on departure. In a spectrogram that shift is a clean S-curve. The size of the shift encodes the plane's speed. The steepness of the S encodes how close it passed. And the exact moment of the curve's center is the moment of closest approach, stamped to the second." },
+      { heading: "THE PIPELINE", body: "Five steps. One: compute the spectrogram and bring up the low band. Two: measure each curve - velocity, distance, closest-approach time. Three: pull public ADS-B data, which records every flight's position, speed, altitude, and time. Four: model what each candidate point on the ground would have heard, with real flight geometry and sound-travel delay. Five: lock it - two flyovers with a measured gap, or one flyover with a known recording time, constrains the search to one place. The offset between two events is locked by geometry, so measurement error cannot fake a match." },
+      { heading: "WHAT SURVIVES", body: "This is the part that should make you think. The signal sits in the same band as speech. It passes through walls. Loud foreground audio does not drown it out. High-pass filters fail - the curve comes back after MP3 re-encoding when the band is boosted. And it survives phone-call compression, demonstrated live on the source video. The only things that work are cuts in the audio and active noise removal." },
+      { heading: "THE OPSEC RULE", body: "Footage from a sensitive location carries no raw ambient audio. Strip it, cut it, or process it - before it leaves the building. Location data is no longer just in the pixels and the metadata. It is in the background hum." },
+      { heading: "THE HONEST LIMIT", body: "This is an advanced technique with months of tooling behind it, and the odds of an average person being targeted this way are slim - there are a hundred easier ways to find someone. Its real value is forensic: audio with nothing else to go on. And its real lesson is that physics is always recording, whether or not you can hear it." },
+      { heading: "THE DOWNLOAD", body: "The one-page technique sheet is on the downloads page - the claim, the five steps, and the countermeasure in one sheet. My detector tooling is open source on GitHub. Build it, break it, improve it." },
+    ],
+    links: [
+      { label: "GitHub — aircraft-doppler-geolocation", url: "https://github.com/imperator-clawdius/aircraft-doppler-geolocation" },
+      { label: "Source technique — colsto", url: "https://youtu.be/UytYrhYLOKI" },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "opsec-playbook",
     title: "THE OPSEC STANDARD",
     date: "2026-11-03",
