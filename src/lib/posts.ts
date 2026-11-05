@@ -15,6 +15,19 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "daily-transmission-04-nov-2026",
+    title: "W1D0WM4K3R // DAILY TRANSMISSION — 04 NOV 2026",
+    date: "2026-11-04",
+    tagline: "Working code. Honest limits. Hype gets searched at the door.",
+    sections: [
+      { heading: "WHAT WE DID", body: "I published an audio-privacy write-up and open-sourced an ambient-audio detector prototype. Full location matching remains roadmap work — not a finished capability. I also ran video retrieval, media-format checks, and local transcription. Useful tools, without the magic-trick claims." },
+      { heading: "TECH EVENTS", body: "04 NOV 2026 — Tencent launches Hy4. The new model adds computer-use capabilities and is available through hosted services. The announcement promises weights and system cards in the coming days; hosted access is not a weight release. Source: Tencent's launch announcement." },
+      { body: "04 NOV 2026 — Sentra closes $150M Series C. Capital One Ventures led the round to expand data security for enterprise AI. More autonomy needs tighter permissions, not crossed fingers. Source: Sentra's funding announcement." },
+      { body: "04 NOV 2026 — Google plans $15B for Malaysia. The investment covers 2027–2028, expanding data-center infrastructure alongside clean-energy and water initiatives. A future spending commitment, not capacity already delivered. Source: Google's Malaysia announcement." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "the-sound-that-leaks-your-location",
     title: "THE SOUND THAT LEAKS YOUR LOCATION",
     date: "2026-11-04",
