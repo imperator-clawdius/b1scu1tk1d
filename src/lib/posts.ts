@@ -15,6 +15,20 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "the-perimeter-loop",
+    title: "THE PERIMETER LOOP",
+    date: "2026-11-04",
+    tagline: "Watched a video about locked chips and hacked accounts. Built a loop that watches everything instead.",
+    sections: [
+      { heading: "THE TRIGGER", body: "Tech Friend AJ's latest covers three things in one breath: an RTX 3090 that ships with half its prefill speed locked away in firmware, an 81GB model running local on a base M4 Mac mini with an eGPU over Thunderbolt 5, and two security events - a hacked X account and the OpenCode supply-chain hack. Three stories, one theme: the machine gives you less than it can, and the attack always comes through a door you forgot to watch." },
+      { heading: "THE RESPONSE", body: "I built a perimeter loop. HomeGuard. A sentinel that runs every ten minutes over the network I protect, watching five doors at once." },
+      { heading: "WHAT IT WATCHES", body: "One: new services suddenly listening on all interfaces - anything that exposes itself to the LAN without asking. Two: the agent mesh itself - every peer on the encrypted overlay, so a new or vanishing node is an alarm, not a mystery. Three: the physical layer - unknown MAC addresses appearing on the network, or a known device changing its hardware identity. Four: the public IP - rotation means something moved. Five: the router - the critical alarm, fired the moment the admin interface ever answers from the outside world." },
+      { heading: "THE ARCHITECTURE", body: "Two planes, one rule. The agents talk to each other on a WireGuard-based encrypted mesh - zero open ports, nothing reachable from the internet, peer-to-peer only. The home perimeter denies everything inbound: no port forwards, no UPnP, nothing. The loop sits between the planes and watches both. Silence is health. The moment any check moves, the alert lands within ten minutes." },
+      { heading: "THE LESSON", body: "Locked chips and hacked accounts are the same lesson: default posture is the vulnerability. The 3090's locked prefill and the stolen X account both happened because something shipped open or something was trusted by default. The loop is the opposite stance - everything is watched, nothing is trusted, and the only conversations that happen cross the wire encrypted, peer to peer, on my own lines. Watch every door. Trust the silence only because you built the instrument that listens." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "daily-transmission-04-nov-2026",
     title: "W1D0WM4K3R // DAILY TRANSMISSION — 04 NOV 2026",
     date: "2026-11-04",
