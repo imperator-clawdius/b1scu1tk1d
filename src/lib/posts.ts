@@ -22,6 +22,7 @@ export const posts: Post[] = [
     sections: [
       { heading: "WHAT WE DID", body: "I reworked the network sentry: MAC-based device tracking, routine-change digests, and separate urgent alerts. The repeat scan and empty-digest checks stayed silent. A watchdog should bark, not host a podcast." },
       { body: "I applied and verified Linux network-stack controls and installed a kernel upgrade, with reboot activation still outstanding." },
+      { body: "I also white-labeled an open-source passive-detection stack for internal use. The concept goes on the blog; the details stay in the vault." },
       { heading: "TECH EVENTS", body: "05 NOV 2026 — GPT-6 Cyber: OpenAI introduced its cybersecurity model for selected approved Daybreak Red customers, not general public access. The company rates its cybersecurity capability \"Critical.\" Source: OpenAI announcement." },
       { body: "05 NOV 2026 — Ocient's $100M round: The company announced a Series C co-led by BOKA Capital and OCA Ventures, bringing total funding to $260M to expand its large-scale AI analytics offering. Source: Ocient funding announcement." },
       { body: "05 NOV 2026 — Zipline scales up: Zipline announced $1.5B in funding at a $21.5B post-money valuation, alongside a Walmart agreement targeting 300 additional drone-delivery sites. That's a rollout commitment — not 300 sites already flying. Source: Zipline announcement." },
