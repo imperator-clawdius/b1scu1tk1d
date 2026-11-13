@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "motion/react";
 import {
   biscuits,
@@ -127,6 +128,8 @@ export default function Home() {
   const total = biscuits.length;
   const features = posts.filter((p) => !p.slug.startsWith("daily-transmission"));
   const transmissions = posts.filter((p) => p.slug.startsWith("daily-transmission"));
+  const [showAllTransmissions, setShowAllTransmissions] = useState(false);
+  const visibleTransmissions = showAllTransmissions ? transmissions : transmissions.slice(0, 3);
 
   return (
     <div className="relative">
@@ -249,20 +252,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- DOWNLOADS CTA ---------- */}
-      <section className="mx-auto max-w-6xl px-6 pt-6">
-        <a
-          href="/downloads"
-          className="group flex items-center justify-between gap-4 rounded-xl border border-line bg-panel/40 px-6 py-4 backdrop-blur-sm transition-all duration-300 hover:border-cyan/40"
-        >
-          <div>
-            <p className="font-mono text-[11px] tracking-[0.25em] text-cyan">{"// DOWNLOADS"}</p>
-            <p className="mt-1 text-sm text-cream">Magik Terminal &amp; the toolbox — free stuff worth grabbing</p>
-          </div>
-          <span className="font-mono text-xs text-amber transition-transform duration-300 group-hover:translate-x-1">↗</span>
-        </a>
-      </section>
-
       {/* ---------- FEATURE IMAGE ---------- */}
       <section className="mx-auto max-w-2xl px-6 pt-12">
         <div className="overflow-hidden rounded-lg border border-line/60">
@@ -301,9 +290,21 @@ export default function Home() {
         >
           {"// DAILY TRANSMISSIONS"}
         </motion.h2>
-        {transmissions.map((p) => (
+        {visibleTransmissions.map((p) => (
           <PostArticle key={p.slug} post={p} />
         ))}
+        {transmissions.length > 3 && (
+          <div className="mt-2 text-center">
+            <button
+              onClick={() => setShowAllTransmissions((v) => !v)}
+              className="font-mono text-xs tracking-[0.25em] text-cyan transition-colors hover:text-cream"
+            >
+              {showAllTransmissions
+                ? "▮ COLLAPSE ARCHIVE ▮"
+                : `▸ LOAD ${transmissions.length - 3} OLDER TRANSMISSIONS`}
+            </button>
+          </div>
+        )}
       </section>
 
       {/* ---------- FEED ---------- */}
