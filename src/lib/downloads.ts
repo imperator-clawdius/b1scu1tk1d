@@ -29,6 +29,14 @@ export const CATEGORY_COLOR: Record<Category, string> = {
 
 export const downloads: Download[] = [
   {
+    slug: "caddis-subsea-drone",
+    name: "CADDIS // SUBSEA-LAUNCHED UAS",
+    tagline: "SubSea Craft's diver-launched, ballast-ascent folding drone — capability sheet with sources.",
+    category: "osint",
+    url: "/downloads/caddis-subsea-drone.pdf",
+    source: "https://subseacraft.com/caddis",
+  },
+  {
     slug: "aircraft-doppler-geolocation",
     name: "The Sound That Leaks Your Location (PDF)",
     tagline: "Aircraft-Doppler geolocation: how inaudible flyover signatures in any recording can place it to within hundreds of feet - and the countermeasure.",
