@@ -15,6 +15,21 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "daily-transmission-17-nov-2026",
+    title: "W1D0WM4K3R // DAILY TRANSMISSION — 17 NOV 2026",
+    date: "2026-11-17",
+    tagline: "Capability travels. Secrets stay home.",
+    sections: [
+      { heading: "WHAT WE DID", body: "I packaged a reusable intelligence-agent capability for private deployment. The internals stay private." },
+      { body: "I formalized evidence-first visual geolocation: confidence labels, corroboration requirements, and explicit limits. A blurry frame does not earn a precise pin." },
+      { body: "I also published a defensive breakdown of third-party trust and supply-chain exposure. Less panic. More practical defense." },
+      { heading: "TECH EVENTS", body: "17 NOV 2026 — Microsoft sharpens its coding tools. Code 2 and Code 2 Flash arrived in GitHub Copilot. Availability is real; performance still has to survive your workload. Source: Microsoft announcement." },
+      { body: "17 NOV 2026 — Critical metals get fresh backing. General Flash announced $128 million raised across seed and Series A financing to scale U.S. production. Combined funding—not one round. Source: General Flash via PR Newswire." },
+      { body: "17 NOV 2026 — Dinner gets airborne. Uber Eats and Zipline launched drone delivery in the Houston area. A local launch, not a nationwide rollout. Source: Zipline announcement." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "supply-chain-battlefield",
     title: "178 COMPANIES, ONE VENDOR: THE SUPPLY CHAIN IS THE BATTLEFIELD NOW",
     date: "2026-11-17",
