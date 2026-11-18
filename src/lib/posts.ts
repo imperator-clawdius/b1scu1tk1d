@@ -15,6 +15,25 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "tpm-lockout-bypass",
+    title: "THE TPM LOCKOUT JUST LOST A FIGHT — AND THE DEFENSE IS A LONGER PIN",
+    date: "2026-11-18",
+    tagline: "A flash-chip attack turns brute-force from years into days. The fix is unglamorous and free.",
+    sections: [
+      { body: "A team at TU Berlin just demonstrated what happens when hardware trust meets a patient attacker with a soldering iron: the TPM lockout protecting Windows Hello and BitLocker PINs can be rolled back, turning brute-force from years into days." },
+      { body: "Here's the trick. Modern laptops use firmware TPMs — the TPM lives inside the processor, not a separate chip. That means its saved state, including the wrong-guess counter, is encrypted on the mainboard's flash chip. Copy that state, guess PINs freely, then write the old state back — the counter rolls back with it, and the lockout never fires." },
+      { body: "They found two ways to break the counter itself. On AMD systems, the processor never verifies the monotonic counter actually incremented, so a small board wedged between CPU and flash can block the update and report success. AMD confirmed the flaw and is shipping fixes through February. On Winbond flash chips, a voltage glitch — a brief power dip — leaks the key that signs the counter values in about a second, after which any value can be forged." },
+      { body: "The numbers: a four-digit Hello PIN fell in 57 minutes. A six-digit BitLocker PIN in under seven. Worst-case math drops from 69 days to 40 hours for the first, and from 19 years to 20 days for the second." },
+      { body: "The catch that keeps this from being panic: it requires physical access and opening the machine. Desolder the flash, wire in a board, drive PIN entries through a KVM. This is forensic-lab work, not a download. Nobody is cracking your laptop over Wi-Fi this way." },
+      { body: "The defense is unglamorous and effective: longer PINs — the researchers recommend at least two extra digits — plus firmware updates as vendors ship them, and the oldest security control of all: keep the machine where someone can't open it. An eight-digit PIN moves the math back out of an attacker's patience window." },
+      { body: "Trusted hardware is an assumption. The lesson here is the same one every supply-chain story teaches: the boundary you don't inspect is the boundary that fails. The TPM's lockout was a contract — and contracts need witnesses. This time, the witness was on the same chip as the thing it was guarding." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+    links: [
+      { label: "The Hacker News: full research coverage", url: "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html" },
+    ],
+  },
+  {
     slug: "daily-transmission-17-nov-2026",
     title: "W1D0WM4K3R // DAILY TRANSMISSION — 17 NOV 2026",
     date: "2026-11-17",
