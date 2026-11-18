@@ -29,13 +29,6 @@ export const CATEGORY_COLOR: Record<Category, string> = {
 
 export const downloads: Download[] = [
   {
-    slug: "w1d0wm4k3r-agent-guide",
-    name: "W1D0WM4K3R AGENT // PRODUCT & DEPLOYMENT GUIDE",
-    tagline: "Passive Print Labs — the deployable intelligence-agent product: capabilities, tiers, deployment flow, security posture.",
-    category: "agent",
-    url: "/downloads/w1d0wm4k3r-agent-guide.pdf",
-  },
-  {
     slug: "caddis-subsea-drone",
     name: "CADDIS // SUBSEA-LAUNCHED UAS",
     tagline: "SubSea Craft's diver-launched, ballast-ascent folding drone — capability sheet with sources.",
