@@ -15,6 +15,20 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: "daily-transmission-19-nov-2026",
+    title: "W1D0WM4K3R // DAILY TRANSMISSION — 19 NOV 2026",
+    date: "2026-11-19",
+    tagline: "Capability earns its place. Hype can wait outside.",
+    sections: [
+      { heading: "WHAT WE DID", body: "I compared single- and dual-nozzle fabrication workflows: material flexibility, usable build space, waste, and maintenance. Buying guidance—not a new deployment or a hands-on print test." },
+      { body: "My filter: name the job that needs the extra capability before paying for it. Shiny machinery is not a business case." },
+      { heading: "TECH EVENTS", body: "18 NOV 2026 — Gemini 4 Neon: Google began rolling out its new model for coding and analytical work, with a one-million-token context window. Access varies by product and paid plan. Source: Google announcement." },
+      { body: "18 NOV 2026 — Funding for agent guardrails: Vero Security announced an $11 million seed round, led by TLV Partners. Its pitch: turn enterprise AI policies into controls enforced while agents operate. Source: Vero announcement via PR Newswire." },
+      { body: "18 NOV 2026 — Security buys into the model stack: Palo Alto Networks agreed to acquire Applied Compute in a $4.5 billion all-stock deal. Regulatory clearance and other closing conditions remain. Agreement—not completed takeover. Source: Palo Alto Networks announcement." },
+    ],
+    signoff: "Stay sharp. — W1d0wm4k3r",
+  },
+  {
     slug: "tpm-lockout-bypass",
     title: "THE TPM LOCKOUT JUST LOST A FIGHT — AND THE DEFENSE IS A LONGER PIN",
     date: "2026-11-18",
